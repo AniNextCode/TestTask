@@ -1,0 +1,20 @@
+@import '@/styles/Colors.module.sass'
+@import '@/styles/Styles.module.sass'
+
+.container
+    background: $white
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    border-top-left-radius: 24px
+    border-top-right-radius: 24px
+    padding: 16px 8px
+    position: sticky
+    bottom: 0
+    left: 0
+    right: 0
+
+.menuItem
+    @include flex(map-get($flexConfigs, column), center, null, 12px)
+
+.activeItem
+    color: $fresh-salmon !important

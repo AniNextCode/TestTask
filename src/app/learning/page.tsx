@@ -13,7 +13,7 @@ export default function page() {
   }));
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={globalStyles.flexRow} style={{ gap: 16 }}>
         <button onClick={() => router.back()}>
           <BackArrow />

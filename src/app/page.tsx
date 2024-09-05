@@ -17,9 +17,10 @@ import {
 } from "@/assets/HomeSvgs";
 import CategoryCard from "@/components/home/CategoryCard/CategoryCard";
 import InfoBlock from "@/components/home/InfoBlock/InfoBlock";
+import Menu from "@/components/menu/Menu";
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles.headerContainer}>
         <h3 className={globalStyles.carbonMedium18}>Ray Driving Theory</h3>
         <div className={styles.iconsContainer}>
