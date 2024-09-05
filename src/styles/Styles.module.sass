@@ -1,0 +1,56 @@
+@import '@/styles/Colors.module.sass'
+
+$flexConfigs: ( row: row, column: column)
+
+@mixin flex($direction, $align: null, $justify: null, $gap: null)
+  display: flex
+  flex-direction: $direction
+  @if $align != null
+    align-items: $align
+  @if $justify != null
+    justify-content: $justify
+  @if $gap != null
+    gap: $gap
+
+
+.flexRow
+    @include flex(map-get($flexConfigs, row))
+
+.flexColumn
+    @include flex(map-get($flexConfigs, column))
+
+.flexRowAlignCenter
+    @include flex(map-get($flexConfigs, row), center)
+
+.flexColumnAlignCenter
+    @include flex(map-get($flexConfigs, column), center)
+
+.flexRowAlignCenterJustifyBetween
+    @include flex(map-get($flexConfigs, row), center, space-between)
+
+.carbonMedium18
+    font-size: 18px
+    color: $carbon-fiber
+    font-weight: 500
+
+.carbonRegular18
+    font-size: 18px
+    color: $carbon-fiber
+
+.carbonMedium13
+    font-size: 13px
+    color: $carbon-fiber
+    font-weight: 500
+
+.carbonSemibold20
+    font-size: 20px
+    color: $carbon-fiber
+    font-weight: 600
+
+.metalRegular14
+    font-size: 14px
+    color: $heavy-metal-armor
+
+.carbonRegular14
+    font-size: 14px
+    color: $carbon-fiber

@@ -1,0 +1,17 @@
+@import '@/styles/Colors.module.sass'
+@import '@/styles/Styles.module.sass'
+
+.titleTests
+    height: 48px
+    width: 109px
+    margin: auto
+    font-size: 14px
+    font-weight: 500
+    border-bottom: 2px solid $fresh-salmon
+    @include flex(map-get($flexConfigs, row), center, center)
+    color: $fresh-salmon
+
+.testsContainer
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    margin-top: 26px

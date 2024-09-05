@@ -1,0 +1,35 @@
+@import '@/styles/Colors.module.sass'
+@import '@/styles/Styles.module.sass'
+
+.main
+    max-width: 360px
+    background-color: $doctor
+    margin: auto
+    padding: 48px 16px
+
+.headerContainer
+    @include flex(map-get($flexConfigs, row), center, space-between)
+    padding: 12px 0
+
+.iconsContainer
+    @include flex(map-get($flexConfigs, row), null, null, 8px)
+
+.iconContainer
+    @include flex(map-get($flexConfigs, row), center)
+    background: $white
+    border-radius: 8px
+    padding: 4px 8px
+
+.categoriesContainer
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    gap: 8px
+    margin-top: 8px
+    margin-bottom: 24px
+
+.infoBlocksContainer
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+
+

@@ -1,0 +1,15 @@
+@import '@/styles/Colors.module.sass'
+@import '@/styles/Styles.module.sass'
+
+.container
+   @include flex(map-get($flexConfigs, column), center, null, 8px) 
+   p
+      text-align: center
+
+.iconContainer
+    background: $fresh-salmon
+    border-radius: 50%
+    width: 58px
+    height: 58px
+    @include flex(map-get($flexConfigs, column), center, center) 
+
